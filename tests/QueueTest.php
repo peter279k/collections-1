@@ -4,11 +4,12 @@ namespace Tests\Collections;
 
 use Collections\Queue;
 use RuntimeException;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author italo
  */
-class QueueTest extends \PHPUnit_Framework_TestCase
+class QueueTest extends TestCase
 {
     /**
      * @var Queue

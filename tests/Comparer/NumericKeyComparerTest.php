@@ -3,8 +3,9 @@
 namespace Tests\Collections\Comparer;
 
 use Collections\Comparer\NumericKeyComparer;
+use PHPUnit\Framework\TestCase;
 
-class NumericKeyComparerTest extends \PHPUnit_Framework_TestCase
+class NumericKeyComparerTest extends TestCase
 {
     /**
      * @test

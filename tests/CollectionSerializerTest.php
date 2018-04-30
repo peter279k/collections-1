@@ -7,8 +7,9 @@ use Collections\Queue;
 use Collections\Set;
 use Collections\Stack;
 use Collections\Vector;
+use PHPUnit\Framework\TestCase;
 
-class CollectionSerializerTest extends \PHPUnit_Framework_TestCase
+class CollectionSerializerTest extends TestCase
 {
     /**
      * @test
@@ -16,7 +17,7 @@ class CollectionSerializerTest extends \PHPUnit_Framework_TestCase
      * @param $coll
      * @param $expectedSerialization
      */
-    public function is_should_json_serialize_it($coll, $expectedSerialization)
+    public function it_should_json_serialize_it($coll, $expectedSerialization)
     {
         $serializedColl = json_encode($coll);
         $this->assertJsonStringEqualsJsonString($serializedColl, $expectedSerialization);
@@ -27,7 +28,7 @@ class CollectionSerializerTest extends \PHPUnit_Framework_TestCase
      * @dataProvider collectionProvider
      * @param $coll
      */
-    public function is_should_php_serialize_it($coll)
+    public function it_should_php_serialize_it($coll)
     {
         $serializedColl = serialize($coll);
         $this->assertInternalType("string", $serializedColl);

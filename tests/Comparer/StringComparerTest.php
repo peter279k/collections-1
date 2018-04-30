@@ -3,8 +3,9 @@
 namespace Tests\Collections\Comparer;
 
 use Collections\Comparer\StringComparer;
+use PHPUnit\Framework\TestCase;
 
-class StringComparerTest extends \PHPUnit_Framework_TestCase
+class StringComparerTest extends TestCase
 {
     /**
      * @test

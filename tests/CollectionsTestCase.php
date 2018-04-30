@@ -17,14 +17,14 @@ use Collections\Set;
 use Collections\StackInterface;
 use Collections\Vector;
 use Collections\VectorInterface;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Description of Collection
  *
  * @author italo
  */
-abstract class CollectionsTestCase extends PHPUnit_Framework_TestCase
+abstract class CollectionsTestCase extends TestCase
 {
     /**
      * @var MapInterface|VectorInterface|StackInterface|QueueInterface
@@ -42,7 +42,7 @@ abstract class CollectionsTestCase extends PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function is_should_return_keys()
+    public function it_should_return_keys()
     {
         if ($this->coll instanceof MapInterface) {
             $this->coll->add(new Pair(0, 'value'));

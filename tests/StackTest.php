@@ -9,11 +9,12 @@ namespace Tests\Collections;
 
 use Collections\Stack;
 use RuntimeException;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author italo
  */
-class StackTest extends \PHPUnit_Framework_TestCase
+class StackTest extends TestCase
 {
     /**
      * @var Stack

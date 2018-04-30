@@ -14,8 +14,9 @@ use Collections\Iterator\MapIterator;
 use Collections\Iterator\PairIterator;
 use Collections\Iterator\SetIterator;
 use Collections\Iterator\VectorIterator;
+use PHPUnit\Framework\TestCase;
 
-class ArrayIteratorTest extends \PHPUnit_Framework_TestCase
+class ArrayIteratorTest extends TestCase
 {
     public function testCount()
     {
